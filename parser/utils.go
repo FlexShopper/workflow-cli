@@ -28,7 +28,7 @@ func safeGetInt(args map[string]interface{}, key string) int {
 
 func responseLimit(limit string) (int, error) {
 	if limit == "" {
-		return -1, nil
+		return 10000, nil
 	}
 
 	return strconv.Atoi(limit)
